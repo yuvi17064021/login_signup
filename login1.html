@@ -16,9 +16,6 @@
   <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -34,10 +31,9 @@
     <div class="row well box">
       <div class="col-md-12 col-sm-12">
         <div class="col-md-4 col-sm-4 text-center">
-          <div class="lg"><img src="ShilpLogo.png" style=" max-width: 100px; height: auto;  margin-top: -10%; "></div>
+          <div class="lg"><img src="ShilpLogo.png" style=" max-width: 100px; height: auto;  margin-top: -10%; padding-bottom: 20px"></div>
         </div>
-        <div class="col-md-8 col-sm-8" id="Title">Log In or Sign Up for Campus Ambassadar Program</div>
-
+        <div class="col-md-8 col-sm-8" id="Title" style="padding-top:20px">Log In or Sign Up for Shilp 2018</div>
 
         <div class="tab">
           <button class="tablinks" onclick="openCity(event, 'Login')" id="defaultOpen">Login</button>
@@ -45,8 +41,8 @@
         </div>
 
         <div id="Login" class="tabcontent">
-
-            <div class="wrap-input100 validate-input" data-validate = "Username is reauired">
+          <form class="login100-form validate-form">
+            <div class="wrap-input100 validate-input" data-validate = "User Id is reauired">
               <label for="usr">User Id:</label>
               <input class="input100" type="text" name="username" placeholder="Type your user id">
               <span class="focus-input100" data-symbol="&#xf206;"></span>
@@ -70,7 +66,7 @@
                 </button>
               </div>
             </div>
-
+            </form>
 
             <br><br>
             <div class="txt1 text-center p-t-54 p-b-20">
@@ -95,7 +91,13 @@
 
         <div id="Sign Up" class="tabcontent">
 
+          <form class="login100-form validate-form">
           <div class="form-group">
+            <div class="wrap-input100 validate-input" data-validate = "Name is reauired">
+              <label for="usr"></label>
+              <input class="input100" type="text" name="full name" placeholder="Full Name">
+              <span class="focus-input100" data-symbol="&#xf206;"></span>
+            </div>
             <br>
             <label for="sel1">Date of Birth:</label><br>
             <select aria-label="Day" name="birthday_day" id="day" title="Day" class="_5dba"><option value="0">Day</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26" selected="1">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
@@ -107,22 +109,17 @@
           <span class="_5k_2 _5dba"><input type="radio" name="sex" value="2" id="u_0_a"><label class="_58mt" for="u_0_a">Male</label></span>
 
         <br>
-            <div class="wrap-input100 validate-input" data-validate = "Username is reauired">
-              <label for="usr"></label>
-              <input class="input100" type="text" name="full name" placeholder="Full Name">
-              <span class="focus-input100" data-symbol="&#xf206;"></span>
-            </div>
-            <div class="wrap-input100 validate-input" data-validate = "Username is reauired">
+            <div class="wrap-input100 validate-input" data-validate = "Email id is reauired">
               <label for="usr"></label>
               <input class="input100" type="text" name="email id" placeholder="Email id">
               <span class="focus-input100" data-symbol="&#xf206;"></span>
             </div>
-            <div class="wrap-input100 validate-input" data-validate = "Username is reauired">
+            <div class="wrap-input100 validate-input" data-validate = "College Name is reauired">
               <label for="usr"></label>
               <input class="input100" type="text" name="college" placeholder="College">
               <span class="focus-input100" data-symbol="&#xf206;"></span>
             </div>
-            <div class="wrap-input100 validate-input" data-validate = "Username is reauired">
+            <div class="wrap-input100 validate-input" data-validate = "Phone Number is reauired">
               <label for="usr"></label>
               <input class="input100" type="text" name="Phone Number" placeholder="Phone Number">
               <span class="focus-input100" data-symbol="&#xf206;"></span>
@@ -141,6 +138,7 @@
               </button>
             </div>
           </div>
+        </form>
         </div>
 
         <script>
@@ -175,7 +173,6 @@
 <script src="vendor/bootstrap/js/popper.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-<script src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
 <script src="vendor/daterangepicker/moment.min.js"></script>
 <script src="vendor/daterangepicker/daterangepicker.js"></script>
